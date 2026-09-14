@@ -40,3 +40,25 @@ Real-time computer vision and inertial navigation system prototype written in C+
 **macOS (Homebrew):**
 ```bash
 brew install cmake opencv
+```
+
+**Ubuntu / Debian:**
+```bash
+sudo apt-get update && sudo apt-get install -y cmake g++ libopencv-dev
+```
+
+**Windows (vcpkg):**
+```bash
+vcpkg install opencv4:x64-windows
+```
+
+### Build & Run
+
+```bash
+git clone https://github.com/demchenko-eg/GuidanceSystem.git
+cd GuidanceSystem
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release
+./GuidanceSystem
+```
